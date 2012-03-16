@@ -22,6 +22,8 @@ namespace Tests
         [Test]
         public void TestTennisJson()
         {
+            //Tests that serializing a typed fixture works
+
             //Arrange
             var fixture = new TennisFixture
             {
@@ -44,6 +46,8 @@ namespace Tests
         [Test]
         public void TestExternalServiceTennisJson()
         {
+            //Test that passing a typed fixture to a service that deals with the base class only still keps all the typed information intact (integration test)
+            
             //Arrange
             var fixture = new TennisFixture
                               {
@@ -69,6 +73,8 @@ namespace Tests
         [Test]
         public void TestFootballJson()
         {
+            //Tests that serializing a typed fixture works
+            
             //Arrange
             var fixture = new FootballFixture
             {
@@ -91,6 +97,8 @@ namespace Tests
         [Test]
         public void TestExternalServiceFootballJson()
         {
+            //Test that passing a typed fixture to a service that deals with the base class only still keps all the typed information intact (integration test)
+
             //Arrange
             var fixture = new FootballFixture
             {
@@ -116,6 +124,8 @@ namespace Tests
         [Test]
         public void TestContentTypeDeserializationTennis()
         {
+            //Test that deserializing a sub class into a base class type works when you specify a content type
+            
             //Arrange
             var fixture = new TennisFixture
             {
@@ -145,6 +155,8 @@ namespace Tests
         [Test]
         public void TestContentTypeDeserializationFootball()
         {
+            //Test that deserializing a sub class into a base class type works when you specify a content type
+
             //Arrange
             var fixture = new FootballFixture
             {
